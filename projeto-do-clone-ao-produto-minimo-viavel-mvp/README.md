@@ -33,18 +33,12 @@ O projeto foi estruturado para garantir agilidade no fluxo de trabalho de UI/UX:
 * **Arquitetura Glassmorphism:** Interface de controle construída com efeitos de desfoque de fundo (Backdrop-filter) e bordas translúcidas de alta definição.
 * **Controle de Superfície:** Algoritmos que validam se a cor de base suporta sombras negativas e positivas, garantindo o contraste necessário.
  
-![Exemplo de Estilos](./image/image1.png)
-*Figura 2: Demonstração dos quatro estados de superfície: Flat, Concave, Convex e Pressed.*
- 
 ## 🔧 Como Executar
 1. Clone o repositório.
 2. Configure as credenciais do Firebase no arquivo `src/lib/firebase.ts`.
 3. Certifique-se de que o domínio da sua aplicação está autorizado no console do Firebase (Auth Settings).
 4. Instale as dependências: `npm install`.
 5. Execute o servidor de desenvolvimento: `npm run dev`.
- 
-![Fluxo de Salvamento](./image/image1.png)
-*Figura 3: Representação da sincronização de designs entre o cliente React e a base de dados distribuída.*
  
 ---
 [Voltar ao início](#-morphix-studio-high-fidelity-neumorphic-design-system)
