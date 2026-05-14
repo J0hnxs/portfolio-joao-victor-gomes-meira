@@ -29,18 +29,12 @@ O projeto oferece uma experiência de "What You See Is What You Get" (WYSIWYG) p
 * **Code Generator Instantâneo:** Exportação direta de código CSS otimizado para implementação imediata em qualquer projeto web.
 * **Visualização Multi-Escalar:** Ajuste preciso de border-radius, distância de sombra, intensidade e blur via sliders interativos.
  
-![Exemplos de Componentes Neumórficos](image_1ee16a.png)
-*Figura 2: Demonstração de componentes complexos (switches, botões e loaders) gerados através da plataforma.*
- 
  ## 🔧 Como Executar
 1. Clone o repositório para sua máquina local.
 2. Abra o arquivo `index.html` diretamente no seu navegador ou:
 3. Se estiver usando a versão React:
    * Instale as dependências: `npm install`.
    * Execute o servidor de desenvolvimento: `npm start` ou `npm run dev`.
- 
-![Estrutura de Controles](image_1ee1e9.png)
-*Figura 3: Detalhamento do painel de controle e pipeline de atualização em tempo real do elemento alvo.*
  
 ---
 [Voltar ao início](#-neumorphic-studio-advanced-ui-soft-design-engine)
