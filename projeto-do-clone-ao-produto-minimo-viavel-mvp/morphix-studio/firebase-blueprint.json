@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "Design": {
+      "title": "Design",
+      "description": "A saved neumorphic design configuration.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "The user ID of the owner." },
+        "color": { "type": "string", "description": "Hex color code." },
+        "size": { "type": "number" },
+        "radius": { "type": "number" },
+        "distance": { "type": "number" },
+        "intensity": { "type": "number" },
+        "blur": { "type": "number" },
+        "shape": { "type": "string", "enum": ["flat", "concave", "convex", "pressed"] },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "color", "size", "radius", "distance", "intensity", "blur", "shape", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/designs/{designId}": {
+      "schema": "Design",
+      "description": "Collection of saved designs."
+    }
+  }
+}
