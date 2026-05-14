@@ -41,4 +41,4 @@ O projeto foi estruturado para garantir agilidade no fluxo de trabalho de UI/UX:
 5. Execute o servidor de desenvolvimento: `npm run dev`.
  
 ---
-[Voltar ao início](#-morphix-studio-high-fidelity-neumorphic-design-system)
+[Voltar ao início](https://github.com/J0hnxs/portfolio-joao-victor-gomes-meira/tree/main)
