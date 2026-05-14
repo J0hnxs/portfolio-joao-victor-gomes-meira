@@ -15,7 +15,7 @@ Desenvolvido para oferecer uma experiência de personalização total, o dashboa
  
  
 ---
-![Preview do Morphix Studio](https://raw.githubusercontent.com/shadcn-ui/ui/main/apps/www/public/og.png)
+![Preview do Morphix Studio](https://github.com/J0hnxs/portfolio-joao-victor-gomes-meira/blob/main/projeto-do-clone-ao-produto-minimo-viavel-mvp/img/morphix-studio-img.png)
 *Figura 1: Interface principal integrando painel de controle dinâmico e preview em tempo real.*
  
 ## 🚀 Tecnologias Utilizadas
