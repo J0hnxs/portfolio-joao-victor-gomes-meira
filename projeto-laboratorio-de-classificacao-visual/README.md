@@ -19,7 +19,7 @@ O modelo foi exportado em **TensorFlow.js**, possibilitando execução diretamen
 
 ---
 
-![Preview do Sistema](./img/IMG_1726%20(1).png)
+![Preview do Sistema](https://github.com/J0hnxs/portfolio-joao-victor-gomes-meira/blob/main/projeto-laboratorio-de-classificacao-visual/img/IMG_1726%20(1).png)
 
 *Figura 1: Interface do modelo realizando classificação em tempo real utilizando webcam.*
 
@@ -161,4 +161,4 @@ Projeto desenvolvido utilizando Google Teachable Machine para fins acadêmicos, 
 
 ---
 
-[Voltar ao início](#-smartvision-classifier-ai-image-recognition-with-teachable-machine)
+[Voltar ao início](https://github.com/J0hnxs/portfolio-joao-victor-gomes-meira)
