@@ -37,4 +37,4 @@ O projeto oferece uma experiência de "What You See Is What You Get" (WYSIWYG) p
    * Execute o servidor de desenvolvimento: `npm start` ou `npm run dev`.
  
 ---
-[Voltar ao início](#-neumorphic-studio-advanced-ui-soft-design-engine)
+[Voltar ao início](https://github.com/J0hnxs/portfolio-joao-victor-gomes-meira)
