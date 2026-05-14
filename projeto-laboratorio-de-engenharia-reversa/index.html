@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Studio | AI Assisted Dev</title>
+    <style>
+        /* Estilização Baseada na Engenharia Reversa do Neumorphism.io */
+        :root {
+            --bg-color: #e0e0e0;
+            --text-dark: #1a365d;
+            --shadow-dark: #bebebe;
+            --shadow-light: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #444;
+            display: flex;
+            justify-content: center;
+        }
+
+        .app-container {
+            max-width: 1100px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 60px;
+        }
+
+        .brand h1 {
+            font-size: 36px;
+            color: var(--text-dark);
+            margin: 0;
+        }
+
+        .brand p {
+            color: #888;
+            margin: 5px 0 0 0;
+        }
+
+        /* Layout em Grid */
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        /* Preview Area */
+        .preview-pane {
+            position: relative;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .indicator {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border: 2px solid #a0acc3;
+            opacity: 0.4;
+        }
+
+        .tl { top: 0; left: 0; border-right: 0; border-bottom: 0; border-radius: 10px 0 0 0; }
+        .br { bottom: 0; right: 0; border-left: 0; border-top: 0; border-radius: 0 0 10px 0; }
+
+        #target-element {
+            width: 300px;
+            height: 300px;
+            background: var(--bg-color);
+            transition: border-radius 0.2s, box-shadow 0.1s;
+        }
+
+        /* Painel de Configuração */
+        .config-panel {
+            background: var(--bg-color);
+            padding: 35px;
+            border-radius: 30px;
+            box-shadow: 20px 20px 60px var(--shadow-dark), -20px -20px 60px var(--shadow-light);
+        }
+
+        .control-group { margin-bottom: 20px; }
+        label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 8px; color: #555; }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            background: #cbd5e1;
+            border-radius: 5px;
+            -webkit-appearance: none;
+            outline: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            background: #23344d;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .color-picker-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        input[type="color"] {
+            border: none;
+            width: 35px;
+            height: 35px;
+            background: none;
+            cursor: pointer;
+        }
+
+        .hex-display {
+            background: #fff;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 14px;
+            border: 1px solid #ddd;
+        }
+
+        /* Bloco de Código */
+        .code-output {
+            background: #0f172a;
+            color: #38bdf8;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 30px;
+            position: relative;
+            font-family: 'Fira Code', monospace;
+            font-size: 13px;
+        }
+
+        .copy-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    <header>
+        <div class="brand">
+            <h1>Neumorphism.io</h1>
+            <p>Generate neumorphic designs</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="preview-pane">
+            <div class="indicator tl"></div>
+            <div class="indicator br"></div>
+            <div id="target-element"></div>
+        </div>
+
+        <div class="config-panel">
+            <div class="color-picker-wrapper">
+                <label>Pick a color:</label>
+                <input type="color" id="colorInp" value="#e0e0e0">
+                <span class="hex-display" id="hexOut">#E0E0E0</span>
+            </div>
+
+            <div class="control-group">
+                <label>Size</label>
+                <input type="range" id="sizeInp" min="50" max="400" value="300">
+            </div>
+
+            <div class="control-group">
+                <label>Radius</label>
+                <input type="range" id="radiusInp" min="0" max="150" value="50">
+            </div>
+
+            <div class="control-group">
+                <label>Distance</label>
+                <input type="range" id="distInp" min="5" max="50" value="20">
+            </div>
+
+            <div class="control-group">
+                <label>Blur</label>
+                <input type="range" id="blurInp" min="0" max="100" value="60">
+            </div>
+
+            <div class="code-output">
+                <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
+                <pre id="cssPreview"></pre>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script>
+    // Lógica Funcional para Reconstrução do App
+    const target = document.getElementById('target-element');
+    const cssPre = document.getElementById('cssPreview');
+    const hexLabel = document.getElementById('hexOut');
+
+    const controls = {
+        color: document.getElementById('colorInp'),
+        size: document.getElementById('sizeInp'),
+        radius: document.getElementById('radiusInp'),
+        dist: document.getElementById('distInp'),
+        blur: document.getElementById('blurInp')
+    };
+
+    function updateStyles() {
+        const c = controls.color.value;
+        const s = controls.size.value;
+        const r = controls.radius.value;
+        const d = controls.dist.value;
+        const b = controls.blur.value;
+
+        // Atualiza cores de fundo
+        document.body.style.backgroundColor = c;
+        target.style.backgroundColor = c;
+        hexLabel.innerText = c.toUpperCase();
+
+        // No neumorfismo, as sombras costumam ser ~15% mais escuras/claras
+        // Para o clone exato do site (#e0e0e0), usamos os valores fixos:
+        const shadowDark = "#bebebe";
+        const shadowLight = "#ffffff";
+
+        const boxShadow = `${d}px ${d}px ${b}px ${shadowDark}, -${d}px -${d}px ${b}px ${shadowLight}`;
+
+        // Aplica ao elemento
+        target.style.width = s + 'px';
+        target.style.height = s + 'px';
+        target.style.borderRadius = r + 'px';
+        target.style.boxShadow = boxShadow;
+
+        // Gera o código para o display
+        cssPre.innerText = `border-radius: ${r}px;\nbackground: ${c};\nbox-shadow: ${boxShadow};`;
+    }
+
+    function copyToClipboard() {
+        navigator.clipboard.writeText(cssPre.innerText);
+        alert("CSS Copiado para a área de transferência!");
+    }
+
+    // Event Listeners
+    Object.values(controls).forEach(input => {
+        input.addEventListener('input', updateStyles);
+    });
+
+    // Inicialização
+    updateStyles();
+</script>
+
+</body>
+</html>
