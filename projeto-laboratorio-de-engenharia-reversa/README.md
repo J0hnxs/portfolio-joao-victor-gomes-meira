@@ -12,7 +12,7 @@ O **Neumorphic Studio** é uma ferramenta de engenharia de interface voltada par
 Desenvolvido para agilizar o workflow de designers e desenvolvedores front-end, o motor do projeto calcula dinamicamente a dispersão de sombras (dark e light shadows) com base na cor de fundo selecionada, garantindo que o contraste e a profundidade mantenham a fidelidade visual necessária para interfaces de alta qualidade.
  
 ---
-![Preview do Neumorphism Studio](image_1ee10c.png)
+![Preview do Neumorphism Studio](https://github.com/J0hnxs/portfolio-joao-victor-gomes-meira/blob/main/projeto-laboratorio-de-engenharia-reversa/img/IMG.png)
 *Figura 1: Interface principal apresentando o motor de renderização e os controles de manipulação de sombra.*
  
  ## 🚀 Tecnologias Utilizadas
