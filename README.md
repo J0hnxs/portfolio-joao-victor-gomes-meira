@@ -4,18 +4,18 @@
 ---
  
 ### 📫 Contato & Redes Sociais
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](LINK_DO_SEU_LINKEDIN)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/joão-victor-gomes-meira-9230b32a1/)
 [![E-mail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:joaovictomeira@gmail.com)
 [![Currículo](https://img.shields.io/badge/Currículo-000000?style=for-the-badge&logo=read-the-docs&logoColor=white)](LINK_DO_PDF_OU_SITE)
  
 ---
  
 ### 👨‍💻 Sobre
-Atualmente cursando o 6º período de Ciência da Computação na Universidade da Cidade de São Paulo. Sou apaixonado por resolver problemas através da tecnologia e possuo foco em Desenvolvimento Backend/Frontend e Infraestrutura.
+Atualmente cursando o 6º período de Ciência da Computação na Universidade da Cidade de São Paulo. Sou apaixonado por resolver problemas através da tecnologia e possuo foco em Desenvolvimento Backend/Frontend e Infraestrutura de TI.
  
 * **Habilidades Técnicas:** Python, C, HTML, Java, SQL.
 * **Habilidades Socioemocionais:** Trabalho em equipe, comunicação assertiva e pensamento crítico.
-* **Experiência/Projetos Relevantes:** Atuei em Projetos da Faculdade onde desenvolvi Sistema de Gols em tempo real num jogo de carros de futebol.
+* **Experiência/Projetos Relevantes:** Atuei em Projeto Universitário de Engenharia de Software e Banco de Dados onde desenvolvi soluções práticas integrando hardware e software em iniciativas acadêmicas. Na área de Engenharia de Software, colaborei na construção de um sistema voltado para a automação de irrigação utilizando Arduino. Paralelamente, no escopo de Banco de Dados, projetei um jogo de futebol de robôs (carrinhos), implementando a captura e a atualização de score em tempo real de forma integrada à plataforma de microsserviços/hardware.
  
 ---
  
