@@ -11,7 +11,7 @@
 ---
  
 ### 👨‍💻 Sobre
-Atualmente cursando o 6º período de Ciência da Computação na Universidade da Cidade de São Paulo. Sou apaixonado por resolver problemas através da tecnologia e possuo foco em Desenvolvimento Backend/Frontend e Infraestrutura de TI.
+Atualmente cursando o 7º período de Ciência da Computação na Universidade da Cidade de São Paulo. Sou apaixonado por resolver problemas através da tecnologia e possuo foco em Desenvolvimento Backend/Frontend e Infraestrutura de TI.
  
 * **Habilidades Técnicas:** Python, C, HTML, Java, SQL.
 * **Habilidades Socioemocionais:** Trabalho em equipe, comunicação, proatividade, organização, facilidade de aprendizado, resolução de problemas e adaptabilidade
